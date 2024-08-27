@@ -33,7 +33,7 @@ An agent, represented as a boy/girl character, has to move in an environment to 
 *  Else -> reward=0
 
 ### Graphical Representation
-Write your answer here
+<img src="https://github.com/user-attachments/assets/00ff1d27-791b-497d-80e7-6461360e0249" width=50%>
 
 ## PYTHON REPRESENTATION:
 ```python
@@ -67,8 +67,11 @@ solved_mdp
 ```
 
 ## OUTPUT:
-<img src="https://github.com/user-attachments/assets/34d79098-c7d4-45da-80a5-03b72eea4a67" width=30>
+<img src="https://github.com/user-attachments/assets/34d79098-c7d4-45da-80a5-03b72eea4a67">
 
 ## RESULT:
-Write your output here
-
+Thus a real world problem is represented as Markov Decision Problem in the following ways
+successfully:
+- Text Representation
+- Graphical Representation
+- Python Representation
