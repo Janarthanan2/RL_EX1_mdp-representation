@@ -15,25 +15,59 @@ An agent, represented as a boy/girl character, has to move in an environment to 
 {0,1,2,3}
 
 ### Sample State
--
+* 0 -> Starting point(S)
+* 1 -> Relaxing point(R)
+* 2 -> Goal point(G)
+* 3 -> Restricted point(D)
 
 ### Action Space
-Write your answer here
+{1,2}
+
 
 ### Sample Action
-Write your answer here
+{1} Moving up
+{2} Moving down
 
 ### Reward Function
-Write your answer here
+*  If the goal is reached -> reward=+1
+*  Else -> reward=0
 
 ### Graphical Representation
 Write your answer here
 
 ## PYTHON REPRESENTATION:
-Write your code here
+```python
+solved_mdp = {
+    # Start Point State(S) -> 0
+    0 : {
+        # Action: up -> 0, down -> 1
+        0: [(0.65, 1, 0, False), (0.35, 0, 0, False)],
+        1: [(0.70, 0, 0, False), (0.30, 1, 0, False)]
+    },
+    # Relaxing point state(R) -> 1
+    1: {
+        # Action: up -> 0, down -> 1
+        0: [(0.90, 2, 0, False), (0.10, 0, 0, False)],
+        1: [(0.75, 0, 0, False), (0.25, 2, 0, False)]
+    },
+    # Goal point state(G) -> 2
+    2: {
+        # Action: up -> 0, down -> 1
+        0: [(0.85, 3, 1, True), (0.15, 1, 0, False)],
+        1: [(0.92, 1, 0, False), (0.08, 3, 1, True)]
+    },
+    # Restricted point(R) -> 3
+    3: {
+        # Action: up -> 0, down -> 1
+        0: [(0.80, 3, 0, True), (0.20, 2, 0, False)],
+        1: [(0.85, 2, 0, False), (0.15, 3, 0, True)]
+    }
+}
+solved_mdp
+```
 
 ## OUTPUT:
-Write your Python output here
+<img src="https://github.com/user-attachments/assets/34d79098-c7d4-45da-80a5-03b72eea4a67" width=30>
 
 ## RESULT:
 Write your output here
