@@ -33,7 +33,7 @@ An agent, represented as a boy/girl character, has to move in an environment to 
 *  Else -> reward=0
 
 ### Graphical Representation
-<img src="https://github.com/user-attachments/assets/00ff1d27-791b-497d-80e7-6461360e0249" width=50%>
+<img src="https://github.com/user-attachments/assets/e2a22915-c5c9-4b41-b2cc-524f0f2a1b23" width=50%>
 
 ## PYTHON REPRESENTATION:
 ```python
